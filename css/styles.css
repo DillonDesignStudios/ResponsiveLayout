@@ -1,13 +1,6 @@
-* {
-    margin:  0 auto;
-}
-
-
-
 /***** PHONE 320PX *****/
-@media (max-width: 320px){
-    
-    * {
+* {
+        margin:  0 auto;
         text-align: center;
     }
     
@@ -91,6 +84,7 @@
         margin-top: 30px;
         border-bottom: 1px solid #d6d4d4;
         border-bottom-width:  1px;
+        display: inline-block;
     }
     
     .contact h1 {
@@ -128,26 +122,16 @@
         float: right;
         padding-right: 30px;
     }
-}
 
 
 /***** TABLET 768*****/
 
-@media (max-width: 768px) {
-    
-    .navIntro {
-    background-color: #f6f6f6;    
-    }
+ @media (min-width: 768px) {
     
     .name {
-        text-align: center;
         font-size: 20px;
     }
-    
-    .mainNav{
-        text-align: center;
-    }
-    
+        
     .mainNav ul {
        font-size: 20px;
     }
@@ -157,11 +141,50 @@
         display: inline-block;
         padding: 5px 15px;
     }
-    .mainNav li:first-child {
-        padding-left: 0;
-    }
     
-}
+    .intro {
+        padding: 0 30px 40px 30px;
+        background-color: #f6f6f6;
+        display: inline-block;
+    }
+     
+     .intro img {
+         float: right;
+         width: 35%;
+         padding-left: 30px;
+     }
+     
+     .intro p {
+         font-size: 1.25em;
+         text-align: left;
+         margin-top: 30px;
+     }
+     
+     .marketing,
+     .travel,
+     .photo     {
+         float: left;
+     }
+     
+     .marketing,
+     .travel,
+     .photo img {
+         width: 40%;
+     }
+     
+     .search,
+     .map,
+     .calculator {
+         float: right;
+     }
+     
+     .search,
+     .map,
+     .calculator img {
+         width: 40%;
+     }
+     
+} 
 
 
 
