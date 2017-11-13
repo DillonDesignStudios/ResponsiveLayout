@@ -6,27 +6,33 @@
     
     .navIntro{
         background-color: #f6f6f6;
-        padding-bottom: 40px;
     }
     
     .name {
         padding: 10px 0;
         text-align: center;
         font-family: "Shadows Into Light";
+        color: #198cff;
     }
     
-    .mainNav {
-        text-align: center;
-    }
-    
-    .mainNav ul {
-        list-style:  none;
+    .container {
         display: block;
-        padding: 0;
     }
+
+    .itemOne,
+    .itemTwo,
+    .itemThree {
+        padding: 5px 15px;
+    }
+
+.item {
+    color: #198cff;
+    background-color: #fff;
+    margin: 10px;
+}
     
     .mainNav li {
-        max-width:  90%;
+        max-width:  70%;
         background-color: #ededed;
          color:  #000;
         margin-top: 5px;
@@ -37,21 +43,22 @@
     }
     
     
-    /***** INTRO *****/   
+    /***** INTRO *****/ 
+
+
+    
     .intro p {
         padding: 0 10px;
         font-size: 1em;
+        padding-bottom: 30px;
     }
     
     .intro img {
-        width: 50%;
+        width: 80%;
+        padding: 0 20px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
-    
-    img {
-    max-width: 90%;
-}
 
     
     /***** PORTFOLIO *****/
@@ -59,7 +66,7 @@
     .sectionTitle {
         font-family: "Shadows Into Light";
         font-size: .75em;
-        width:  100%;
+        width:  80%;
         padding: 20px 0;
         text-transform: uppercase;
     }
@@ -68,6 +75,10 @@
         margin-top: 30px;
         max-width: 80%;
     }
+
+.heading img {
+    width: 80%;
+}
     
     .heading h3 {
         padding: 20px 0;
@@ -90,7 +101,7 @@
     .contact h1 {
         font-family: "Shadows Into Light";
         font-size: 1em;
-        width:  100%;
+        width:  90%;
         padding: 20px 0;
         text-transform: uppercase;
     }
@@ -110,78 +121,64 @@
     /***** FOOTER *****/
     .footer {
         text-transform: uppercase;
-        padding: 20px 0;
+        padding: 20px 10px;
     }
     
     .footerName {
         float: left;
-        padding-left: 30px;
     }
     
     .top {
         float: right;
-        padding-right: 30px;
     }
+
+.footerNav {
+    visibility: hidden;
+    display: none;
+}
 
 
 /***** TABLET 768*****/
 
  @media (min-width: 768px) {
-    
-    .name {
-        font-size: 20px;
-    }
-        
-    .mainNav ul {
-       font-size: 20px;
-    }
-    
-    .mainNav li {
-        list-style: none;
-        display: inline-block;
-        padding: 5px 15px;
-    }
-    
-    .intro {
-        padding: 0 30px 40px 30px;
-        background-color: #f6f6f6;
-        display: inline-block;
-    }
+     
+     .container {
+         display: inline-flex;
+     }
+     
+     .intro {
+    padding-bottom: 80px;
+     }
      
      .intro img {
+         width: 30%;
          float: right;
-         width: 35%;
-         padding-left: 30px;
+         margin-right: 20px;
      }
      
      .intro p {
-         font-size: 1.25em;
+         width: 50%;
+         padding-top: 30px;
          text-align: left;
-         margin-top: 30px;
+         margin: 0;
+         margin-left: 40px;
+     } 
+     
+     
+     /*****SECTIONS*****/
+     
+     .sectionContainer {
+         display: inline-flex;
+         flex-wrap: wrap;
+         flex-direction: row;
      }
      
-     .marketing,
-     .travel,
-     .photo     {
-         float: left;
+     .heading {
+         width: 50%;
      }
      
-     .marketing,
-     .travel,
-     .photo img {
-         width: 40%;
-     }
-     
-     .search,
-     .map,
-     .calculator {
-         float: right;
-     }
-     
-     .search,
-     .map,
-     .calculator img {
-         width: 40%;
+     .heading p {
+         width: 70%;
      }
      
      
@@ -198,6 +195,23 @@
      
      #email {
          margin-top: 15px;
+     }
+     
+     /*****FOOTER*****/
+     
+     .top {
+         display: none;
+     }
+     
+     .footerNav {
+         float: right;
+         visibility: visible;
+         display: inline-block;
+     }
+     
+     .footerNav p {
+         display: inline-block;
+         margin: 0 15px;
      }
      
 } 
