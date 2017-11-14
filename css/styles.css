@@ -3,6 +3,10 @@
         margin:  0 auto;
         text-align: center;
     }
+
+a {
+    text-decoration: none;
+}
     
     .navIntro{
         background-color: #f6f6f6;
