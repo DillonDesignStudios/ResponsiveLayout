@@ -4,6 +4,10 @@
         text-align: center;
     }
 
+body {
+    background-color: #313131;
+}
+
 a {
     text-decoration: none;
 }
@@ -70,13 +74,21 @@ a {
     .sectionTitle {
         font-family: "Shadows Into Light";
         font-size: .75em;
-        width:  80%;
+        width:  100%;
         padding: 20px 0;
         text-transform: uppercase;
+        background-color: #313131;
+        color: #f6f6f6;
     }
+
+.sectionContainer {
+    background-color: #313131;
+    color: #f6f6f6;
+    padding-bottom: 30px;
+}
     
     .heading {
-        margin-top: 30px;
+        padding-top: 30px;
         max-width: 80%;
     }
 
@@ -96,7 +108,6 @@ a {
     .contact {
         background-color: #f6f6f6;
         padding-top: 10px;
-        margin-top: 30px;
         border-bottom: 1px solid #d6d4d4;
         border-bottom-width:  1px;
         display: inline-block;
@@ -126,6 +137,7 @@ a {
     .footer {
         text-transform: uppercase;
         padding: 20px 10px;
+        color: #f6f6f6;
     }
     
     .footerName {
@@ -135,6 +147,10 @@ a {
     .top {
         float: right;
     }
+
+.top a {
+    color: #f6f6f6;
+}
 
 .footerNav {
     visibility: hidden;
@@ -148,6 +164,10 @@ a {
      
      .container {
          display: inline-flex;
+     }
+     
+     nav .item {
+         display: inline-block;
      }
      
      .intro {
@@ -213,6 +233,10 @@ a {
          display: inline-block;
      }
      
+     .footerNav a {
+         color: #f6f6f6;
+     }
+     
      .footerNav p {
          display: inline-block;
          margin: 0 15px;
@@ -227,11 +251,15 @@ a {
 @media (min-width: 1024px) {
     
     body {
-        background-color:  #f6f6f6;
+        background-color:  #313131;
+    }
+    
+    nav .item {
+        display: inline-block;
     }
     
     .navIntro {
-        max-width: 90%;
+        width: 100%;
         margin: auto;
     }
     .introContainer {
@@ -267,7 +295,7 @@ a {
 
     .sectionTitle,
     .sectionContainer{
-        background-color: #fff;
+        background-color: #313131;
     }
 
     .sectionTitle,
@@ -285,6 +313,10 @@ a {
     
     .contact {
         display: block;
+    }
+    
+    .footer {
+        background-color: #313131;
     }
 
     .footerName {
