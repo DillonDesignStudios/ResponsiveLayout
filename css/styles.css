@@ -278,6 +278,10 @@
     .heading {
         width: 33%;
     }
+    
+    .contact {
+        display: block;
+    }
 
     .footerName {
         padding-left:  25px;
